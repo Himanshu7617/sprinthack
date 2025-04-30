@@ -18,9 +18,10 @@ export default function HeroSection() {
 
         
       </div>
-      <div className="mt-16 flex flex-col items-center justify-center">
+      <div className=" mt-16 flex flex-col  items-center justify-center  ">
           <QuotesCarousel />
         </div>
+        
     </section>
     
   );

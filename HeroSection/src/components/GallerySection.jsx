@@ -1,30 +1,39 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import myImage from '../assets/farmer.jpg';
+import Delhi from '../assets/delhi.png';
+import road from '../assets/mumbai.png';
+import forest from '../assets/hyderabad.png';
+
 
 const slides = [
   {
     id: 1,
-    title: "Embrace the Journey",
-    content: "Success is not a destination, but a journey filled with challenges, learning, and growth. Embrace each step with courage and determination, knowing that every obstacle overcome is a victory in itself.",
-    image: "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?q=80&w=1000&auto=format&fit=crop",
+    title: "A Voice for Agricultural Rights",
+    content: "CivicSpark can support the Farmer Protest by helping organize and mobilize communities. Through micro-campaigns, users can raise awareness, share petitions, and plan rallies to advocate for farmers' rights. The platform enables tracking of issues, organizing local events, and connecting activists, farmers, and local governments. By offering real-time feedback and crowdSourced data, CivicSpark empowers citizens to take action, push for policy change, and hold governments accountable, ultimately fostering greater civic participation and driving meaningful change",
+ 
+    image: myImage,
   },
   {
     id: 2,
-    title: "Reach New Heights",
-    content: "Your potential is limitless. When you push beyond your comfort zone and challenge yourself to reach higher, you discover strengths you never knew you had. The view from the top is worth every step of the climb.",
-    image: "https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=1000&auto=format&fit=crop",
+    title: "Hyderabad’s Forest Preservation Victory",
+    content: "In January 2025, deforestation in Hyderabad's Kancha Gachibowli for IT parks ignited student protests. Satellite imagery revealed rapid forest loss, fueling public outrage. On March 3, 2025, the Supreme Court intervened, halting construction and preserving 600 acres of forest. CivicSpark’s AI-powered campaign tools helped mobilize activists, amplify voices, and organize efforts, ultimately securing this significant victory in protecting Hyderabad’s green spaces against urban encroachment.",
+    // image: "https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?q=80&w=1000&auto=format&fit=crop",
+    image:forest,
   },
   {
     id: 3,
-    title: "Persevere Through Challenges",
-    content: "The strongest people aren't those who always succeed, but those who refuse to give up when faced with adversity. Your resilience in difficult times defines your character and shapes your future success.",
-    image: "https://images.unsplash.com/photo-1496449903678-68ddcb189a24?q=80&w=1000&auto=format&fit=crop",
+    title: "Delhi’s Neighborhood Safety Patrols",
+    content: "In February 2025, rising nighttime crime in Delhi’s Kalkaji area prompted residents to initiate community patrols. Over 200 volunteers participated, reducing crime incidents by 15%. The success led to the police adopting the model citywide. CivicSpark’s map view played a crucial role by coordinating patrols and ensuring efficient coverage. This collaborative effort empowered citizens to take action, improving safety in the neighborhood and inspiring a broader, citywide initiative for safer communities.",
+    // image: "https://images.unsplash.com/photo-1496449903678-68ddcb189a24?q=80&w=1000&auto=format&fit=crop",
+    image: Delhi,
   },
   {
     id: 4,
-    title: "Create Your Future",
-    content: "You are the architect of your own destiny. With vision, determination, and consistent action, you can build a future that reflects your deepest aspirations. Today's choices become tomorrow's reality.",
-    image: "https://images.unsplash.com/photo-1488998427799-e3362cec87c3?q=80&w=1000&auto=format&fit=crop",
+    title: "Pune’s Elderly Care Initiative",
+    content: " In April 2025, neglect towards Pune’s elderly in Kothrud sparked volunteers to create care programs for 1,000 seniors. Free health camps and social events were organized by March, addressing physical and emotional well-being. CivicSpark’s platform played a key role in scaling these welfare efforts, streamlining volunteer coordination and resource management. The initiative fostered strong community support, ensuring that the elderly received the care, attention, and respect they deserved in their later years.",
+    // image: "https://images.unsplash.com/photo-1488998427799-e3362cec87c3?q=80&w=1000&auto=format&fit=crop",
+    image: road,
   },
 ];
 

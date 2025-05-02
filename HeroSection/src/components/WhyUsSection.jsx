@@ -52,14 +52,14 @@ export default function WhyUsSection() {
               Why Choose Us?
             </h2>
             <p className="text-lg text-slate-700 leading-relaxed">
-              We combine decades of industry expertise with innovative approaches to deliver exceptional results. Our dedicated team works tirelessly to exceed your expectations.
+             We empower communities with smart tools, ignite collective action, and transform civic concerns into real solutions through collaboration, innovation, and impact.
             </p>
             <ul className="space-y-4">
               {[
-                "Expert team with proven track record",
-                "Tailored solutions for your unique needs",
-                "Innovative approaches to complex challenges",
-                "Dedicated support throughout your journey",
+                "Empowering citizens to drive change.",
+                "AI-powered tools for smarter action.",
+                "Transforming concerns into real impact.",
+                "Building stronger, united communities together.",
               ].map((point, index) => (
                 <motion.li
                   key={index}
@@ -104,7 +104,7 @@ export default function WhyUsSection() {
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/70 to-transparent p-6">
-              <p className="text-white font-medium text-lg">Building success together</p>
+              <p className="text-white font-medium text-lg">Ignite Community Power</p>
             </div>
           </motion.div>
         </motion.div>

@@ -20,8 +20,8 @@ const pricingPlans = {
   },
   premium: {
     name: "Premium Plan",
-    monthly: 29,
-    annually: 19,
+    monthly: 49,
+    annually: 299,
     features: [
       { name: "Full access", included: true },
       { name: "Unlimited projects", included: true },
@@ -51,7 +51,7 @@ function PricingCard({ plan, billing }) {
         <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
         <div className="flex items-end gap-1">
           <span className="text-3xl font-bold">
-            ${billing === "monthly" ? plan.monthly : plan.annually}
+            ₹{billing === "monthly" ? plan.monthly : plan.annually}
           </span>
           <span className={`text-sm ${plan.highlight ? "text-slate-300" : "text-slate-500"}`}>
             /{billing === "monthly" ? "month" : "month, billed annually"}
@@ -111,10 +111,10 @@ export default function PricingSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-slate-900 mb-4">
-            Simple, Transparent Pricing
+            Empowering Civic Change, Transparently
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Choose the plan that works best for your needs. Upgrade or downgrade at any time.
+            Choose the campaign plan that drives your community impact. Scale up or adapt your initiatives effortlessly with CivicSpark.
           </p>
 
           <div className="mt-8 inline-flex items-center p-1 bg-slate-100 rounded-lg">
@@ -154,3 +154,4 @@ export default function PricingSection() {
     </section>
   );
 }
+

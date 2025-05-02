@@ -40,6 +40,9 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+* { 
+  scroll-behavior: smooth;
+}
 
 :root {
   --radius: 0.625rem;
